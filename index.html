@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Task Page.html</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./work.js"></script>
+    <script language="javascript">
+        document.onmousedown = disableclick;
+        status = "Right Click Disabled";
+        function disableclick(event) {
+            if (event.button == 2) {
+                alert(status);
+                return false;
+            }
+        }
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+    }
+    
+    </script>
+</head>
+
+<body oncontextmenu="return false;" id="body" style="zoom:70%; background-image: url(./background1.jpg);">
+    
+    <h1 style="margin-left: 60%;">FishBowl<button type="button" onClick="Play()" id="ctrlbtn">
+            <p><i class="fas fa-fish fa-spin" style="font-size:30px"></i></p>
+        </button></h1>
+    <hr>
+
+    <fieldset>
+        <legend>Pickup Anyone</legend>
+
+        <button onclick="violet()" id="t1" class="task" name="task1">Violet</button>
+
+        <button onclick="indigo()" id="t2" class="task" name="task2">Indigo</button>
+
+        <button onclick="blue()" id="t3" class="task">&nbsp;&nbsp;Blue &nbsp;&nbsp;</button>
+
+        <button onclick="green()" id="t4" class="task">Green</button>
+
+        <button onclick="yellow()" id="t5" class="task">Yellow</button>
+
+        <button onclick="orange()" id="t6" class="task">Orange</button>
+
+        <button onclick="brown()" id="t7" class="task" name="task2">Brown</button>
+
+        <button onclick="pink()" id="t8" class="task" style="width: 150px;">Pink</button>
+
+        <button onclick="red()" id="t9" class="task" style="width: 150px;">Red</button>
+
+        <button onclick="white()" id="t10" class="task" style="width: 150px;">White</button>
+
+        <button onclick="silver()" id="t11" class="task" style="width: 150px;">Silver</button>
+
+        <button onclick="gold()" id="t12" class="task" style="width: 150px;">Gold</button>
+
+        
+    
+
+        </div>
+    </fieldset>
+
+    <fieldset class="output">
+        <legend>Your Task</legend>
+        <button id="display"></button>
+    </fieldset>
+
+    <div id="videos" >
+       <video id="video1" poster="./play.png" style="margin:auto; border: 25px groove darkslateblue;" hidden="true" muted controls>
+            <source src="./y2mate.com - Koi Ladki Hai  Full Song  Dil To Pagal Hai  Shah Rukh Khan  Madhuri  Lata  Udit  Kids Song_v240P.mp4" >
+        </video>
+        <video id="video2" poster="./play.png" style="margin:auto; border: 25px groove darkslateblue; " hidden="true" muted controls>
+            <source src="./Audio1.ogg"  type="audio/ogg" >
+        </video>
+        <img id="video3" src="./guess.jpg" style="margin:auto; border: 25px groove darkslateblue;" hidden="true">
+        <img id="video4" src="./safe.gif" style="margin:auto; border: 25px  darkslateblue;" hidden="true">
+    </div>
+
+    <audio controls id="./audioval" loop hidden>
+        <source src="The_Ride.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+
+</html>

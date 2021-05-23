@@ -1,0 +1,164 @@
+h1
+{
+    color: white;  
+    font-family: cursive;
+    font-size: 50px;
+    margin-top: 4%;  
+    margin-left: -5%;
+}
+legend
+{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+p
+{
+    margin-top: 10%;
+}
+fieldset
+{
+    width: 800px;
+    margin-top: 1%;
+}
+.task
+{
+    color: white;
+    background-color: black;
+    font-family: cursive;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flexbox;
+    font-size: 18px;  
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 150;
+    height: 150px;
+    margin: 40px;  
+}
+.task:hover 
+{
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.output
+{
+    margin-left: 45%;
+    margin-top: -38.4%;
+    width: 50%;
+}
+#t1:hover 
+{
+    background-color: violet;
+    color: white;
+    font-weight: bold;
+}
+#t2:hover 
+{
+    background-color: indigo;
+    color: white;
+    font-weight: bold;
+}
+#t3:hover 
+{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+#t4:hover 
+{
+    background-color: Green;
+    color: white;
+    font-weight: bold;
+}
+#t5:hover 
+{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+#t6:hover 
+{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+#t7:hover 
+{
+    background-color: Brown;
+    color: white;
+    font-weight: bold;
+}
+
+#t8:hover 
+{
+    background-color: Pink;
+    color: black;
+    font-weight: bold;
+}
+#t9:hover 
+{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+#t10:hover 
+{
+    background-color: White;
+    color: black;
+    font-weight: bold;
+}
+#t11:hover 
+{
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+}
+#t12:hover 
+{
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+}
+#display
+{
+    width: 100%;
+    font-size: 40px;
+    font-family: cursive;
+    height: 120px;
+}
+.output
+{
+    margin-top: -45%;
+}
+#ctrlbtn
+{
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+}
+#videos
+{
+    position: static;
+    margin-top: 3%;
+    margin-left: 45%;
+    max-width: 1020px;
+    max-height: 720px;
+}
+#video3,video
+{
+    max-width: 800px;
+    max-height: 600px;
+}
+#video4
+{
+    max-width: 800px;
+    max-height: 600px;
+}
+#video3:hover
+{ 
+    background-color: darkblue;
+    width: 100%;
+    margin: 0 auto;
+  }
